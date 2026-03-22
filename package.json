@@ -1,0 +1,11 @@
+{
+    "name": "dcplibrary-ui",
+    "private": true,
+    "scripts": {
+        "build:css": "tailwindcss -c tailwind.config.js -i resources/css/dcpl.css -o resources/dist/dcpl.css --minify",
+        "watch:css": "tailwindcss -c tailwind.config.js -i resources/css/dcpl.css -o resources/dist/dcpl.css --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.0"
+    }
+}

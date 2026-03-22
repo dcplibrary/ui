@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * ── DCPL Design System ───────────────────────────────────────────────────────
+ *
+ * Source of truth for all DCPL brand tokens.
+ *
+ * Flux compatibility: The --color-* variables below are pre-mapped to DCPL
+ * brand tokens so that livewire/flux automatically renders in DCPL brand colors
+ * when installed. These properties are inert if Flux is not present.
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+
+@layer base {
+    :root {
+        /* ── DCPL brand tokens ─────────────────────────────────────── */
+        --dcpl-blue:   #0075A3;
+        --dcpl-orange: #F47920;
+        --dcpl-green:  #8BC53F;
+        --dcpl-purple: #8B5CF6;
+        --dcpl-gold:   #F4B942;
+        --dcpl-text:   #4d6375;
+        --dcpl-gray:   #516573;
+
+        /* ── Flux theming surface — pre-mapped from DCPL tokens ────── */
+        /* Inert if livewire/flux is not installed.                      */
+        --color-accent:         var(--dcpl-blue);
+        --color-accent-content: #ffffff;
+        --color-accent-hover:   #005f85;
+        --color-zinc-900:       var(--dcpl-text);
+        --color-zinc-800:       var(--dcpl-gray);
+    }
+}
+
+@layer base {
+    body {
+        color: var(--dcpl-text);
+    }
+
+    /* Outfit font — loaded via Google Fonts in the consuming layout */
+    .font-outfit {
+        font-family: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+    }
+}

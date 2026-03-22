@@ -2,6 +2,13 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+# [1.1.0](https://github.com/dcplibrary/ui/compare/v1.0.0...v1.1.0) (2026-03-22)
+
+
+### Features
+
+* add sub-tab components ([8c36d6c](https://github.com/dcplibrary/ui/commit/8c36d6c7ced477c272073e76eb7b21d8f527f4a2))
+
 # 1.0.0 (2026-03-22)
 
 

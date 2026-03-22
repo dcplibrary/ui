@@ -6,6 +6,12 @@
         "watch:css": "tailwindcss -c tailwind.config.js -i resources/css/dcpl.css -o resources/dist/dcpl.css --watch"
     },
     "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^12.0.6",
         "tailwindcss": "^3.4.0"
+    },
+    "dependencies": {
+        "semantic-release": "^25.0.3"
     }
 }

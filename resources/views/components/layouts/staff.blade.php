@@ -27,7 +27,7 @@
         @fluxStyles
     @endif
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-gray-50 min-h-screen font-outfit">
 
 {{-- ── Header ─────────────────────────────────────────────────────────────── --}}
 <header class="w-full bg-white shadow-sm">

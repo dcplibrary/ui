@@ -43,37 +43,46 @@
             </span>
         </div>
 
-        {{-- Right: Help + Avatar dropdown --}}
+        @php
+            $authUser = auth()->user();
+            $isAdmin  = method_exists($authUser, 'isAdmin')
+                ? $authUser->isAdmin()
+                : (($authUser->role ?? null) === 'admin');
+        @endphp
+
+        {{-- Right: Optional header links + Settings + Help + Avatar dropdown --}}
         <div class="flex items-center gap-3">
             @auth
+            @isset($headerLinks)
+                {{ $headerLinks }}
+            @endisset
+
+            @if($isAdmin && isset($settingsRoute))
+            <a href="{{ $settingsRoute }}"
+               class="hidden md:inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 bg-gray-50 text-gray-600 shadow-sm hover:text-white hover:bg-dcpl-blue hover:border-dcpl-blue transition-colors"
+               aria-label="Settings"
+               title="Settings">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+            </a>
+            @endif
 
             {{-- Optional help link --}}
             @isset($helpUrl)
             <a href="{{ $helpUrl }}"
                target="_blank"
                rel="noopener noreferrer"
-               class="hidden md:inline text-sm text-gray-500 hover:text-gray-700 transition-colors"
-               onclick="try { window.open(this.href, 'dcplHelp', 'width=980,height=720,scrollbars=yes'); return false; } catch (e) { return true; }">
-                Help
-            </a>
-            <a href="{{ $helpUrl }}"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="hidden md:inline-flex items-center justify-center w-8 h-8 rounded-full text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
+               class="hidden md:inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 bg-gray-50 text-gray-600 shadow-sm hover:text-white hover:bg-dcpl-blue hover:border-dcpl-blue transition-colors"
                aria-label="Help"
+               title="Help"
                onclick="try { window.open(this.href, 'dcplHelp', 'width=980,height=720,scrollbars=yes'); return false; } catch (e) { return true; }">
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.251 1.09-1.251 1.902v.75m0 3h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                 </svg>
             </a>
             @endisset
-
-            @php
-                $authUser = auth()->user();
-                $isAdmin  = method_exists($authUser, 'isAdmin')
-                    ? $authUser->isAdmin()
-                    : (($authUser->role ?? null) === 'admin');
-            @endphp
 
             {{-- Avatar dropdown --}}
             <div class="relative" x-data="{ open: false }" @click.away="open = false">

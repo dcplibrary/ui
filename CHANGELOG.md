@@ -2,6 +2,13 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+# [1.2.0](https://github.com/dcplibrary/ui/compare/v1.1.0...v1.2.0) (2026-03-25)
+
+
+### Features
+
+* add settings icon to subheader for admins ([c5bbd71](https://github.com/dcplibrary/ui/commit/c5bbd71abcea5e850a758bb5a16457b17a1b511b))
+
 # [1.1.0](https://github.com/dcplibrary/ui/compare/v1.0.0...v1.1.0) (2026-03-22)
 
 

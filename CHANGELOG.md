@@ -2,6 +2,13 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+## [1.3.1](https://github.com/dcplibrary/ui/compare/v1.3.0...v1.3.1) (2026-05-05)
+
+
+### Bug Fixes
+
+* add favicon to staff layout ([5e11fdf](https://github.com/dcplibrary/ui/commit/5e11fdf666b29c360073dc4fe220e48e32b880c5))
+
 # [1.3.0](https://github.com/dcplibrary/ui/compare/v1.2.0...v1.3.0) (2026-05-05)
 
 

@@ -34,7 +34,9 @@ class UiServiceProvider extends ServiceProvider
 
         // php artisan vendor:publish --tag=dcpl-ui-assets
         $this->publishes([
-            __DIR__ . '/../resources/dist/dcpl.css' => public_path('vendor/dcpl/dcpl.css'),
+            __DIR__ . '/../resources/dist/dcpl.css'          => public_path('vendor/dcpl/dcpl.css'),
+            __DIR__ . '/../resources/img/favicon.ico'         => public_path('favicon.ico'),
+            __DIR__ . '/../resources/img/apple-touch-icon.png' => public_path('apple-touch-icon.png'),
         ], 'dcpl-ui-assets');
 
         // ── Artisan commands ─────────────────────────────────────────────────

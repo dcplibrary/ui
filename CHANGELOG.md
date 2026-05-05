@@ -2,6 +2,13 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+## [1.3.2](https://github.com/dcplibrary/ui/compare/v1.3.1...v1.3.2) (2026-05-05)
+
+
+### Bug Fixes
+
+* favicon file type ([4b38ea5](https://github.com/dcplibrary/ui/commit/4b38ea552ffbc2b12e04cdc0d55bf6526078ae87))
+
 ## [1.3.1](https://github.com/dcplibrary/ui/compare/v1.3.0...v1.3.1) (2026-05-05)
 
 

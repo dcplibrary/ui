@@ -2,6 +2,13 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+## [1.3.4](https://github.com/dcplibrary/ui/compare/v1.3.3...v1.3.4) (2026-10-29)
+
+
+### Bug Fixes
+
+* update composer.lock ([91150f7](https://github.com/dcplibrary/ui/commit/91150f7408b706e962874a0f3a96b9bf69983721))
+
 ## [1.3.3](https://github.com/dcplibrary/ui/compare/v1.3.2...v1.3.3) (2026-07-27)
 
 

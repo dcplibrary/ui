@@ -2,6 +2,13 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+## [1.3.5](https://github.com/dcplibrary/ui/compare/v1.3.4...v1.3.5) (2026-11-11)
+
+
+### Bug Fixes
+
+* skip CDN Alpine in staff layout when Livewire is installed ([e128a3e](https://github.com/dcplibrary/ui/commit/e128a3edf0a43608dc6a9892d10243930db2ecb2))
+
 ## [1.3.4](https://github.com/dcplibrary/ui/compare/v1.3.3...v1.3.4) (2026-10-29)
 
 

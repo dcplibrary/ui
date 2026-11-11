@@ -20,8 +20,11 @@
     {{-- Additional CSS from the consuming package (pass via $packageCss slot) --}}
     @isset($packageCss){{ $packageCss }}@endisset
 
-    {{-- Alpine.js — loaded by dcplibrary/ui since the layout uses Alpine internally --}}
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    {{-- Alpine.js — the layout uses Alpine internally. Livewire ships its own copy,
+         and two copies on one page break each other, so only load it without Livewire. --}}
+    @unless(class_exists(\Livewire\Livewire::class))
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    @endunless
 
     {{-- Livewire styles --}}
     @livewireStyles

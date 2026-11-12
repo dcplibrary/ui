@@ -2,7 +2,7 @@
     "name": "dcplibrary/ui",
     "description": "DCPL shared UI design system — Blade components, Tailwind config, and CSS for the Daviess County Public Library app suite.",
     "type": "library",
-    "license": "MIT",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Daviess County Public Library",

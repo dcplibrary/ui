@@ -1,6 +1,9 @@
 {{--
     DCPL logo — inline SVG with optional app name.
 
+    The logo artwork is © Daviess County Public Library, all rights reserved.
+    See LICENSE.
+
     Usage:
         <x-dcpl::logo />
         <x-dcpl::logo :href="route('home')" />

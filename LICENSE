@@ -1,0 +1,20 @@
+Copyright (c) 2026 Daviess County Public Library. All rights reserved.
+
+This repository contains the design system used by Daviess County Public
+Library's own applications. It is published so that it can be read and so
+that the library's applications can install it.
+
+No licence is granted. Except as the law otherwise allows, you may not copy,
+modify, distribute, sublicense or use this software, in whole or in part,
+without prior written permission from Daviess County Public Library.
+
+The names "Daviess County Public Library" and "DCPL", and the DCPL logo in any
+form (including the artwork in resources/views/components/logo.blade.php and
+the files in resources/img), are the property of Daviess County Public Library
+and may not be used without prior written permission.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL DAVIESS COUNTY PUBLIC LIBRARY BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+Permission requests: webmaster@dcplibrary.org

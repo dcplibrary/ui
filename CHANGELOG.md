@@ -2,6 +2,8 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+## [1.3.6](https://github.com/dcplibrary/ui/compare/v1.3.5...v1.3.6) (2026-11-12)
+
 ## [1.3.5](https://github.com/dcplibrary/ui/compare/v1.3.4...v1.3.5) (2026-11-11)
 
 

@@ -2,6 +2,13 @@
 
 All notable changes to `dcplibrary/ui` are documented here.
 
+## [1.3.7](https://github.com/dcplibrary/ui/compare/v1.3.6...v1.3.7) (2026-11-18)
+
+
+### Bug Fixes
+
+* update php ([f26d8bb](https://github.com/dcplibrary/ui/commit/f26d8bbce305ca037865052528014c8ada7f7a5d))
+
 ## [1.3.6](https://github.com/dcplibrary/ui/compare/v1.3.5...v1.3.6) (2026-11-12)
 
 ## [1.3.5](https://github.com/dcplibrary/ui/compare/v1.3.4...v1.3.5) (2026-11-11)
